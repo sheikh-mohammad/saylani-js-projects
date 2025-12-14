@@ -1,31 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Age Calculator</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <header>
+            <nav>
+                <div style="background-color: white">
+                    <i class="fa-solid fa-cake-candles"></i> Age Today
+                </div>
+                <div>
+                    <i class="fa-regular fa-calendar-days"></i> Specific Date
+                </div>
+                <div><i class="fa-solid fa-gift"></i> Find DOB</div>
+            </nav>
+        </header>
 
-<body>
-
-    <header>
-        <nav>
-            <div style="background-color: white;">
-                <i class="fa-solid fa-cake-candles"></i> Age Today
+        <main>
+            <div>
+                <span>Date of Birth</span>
+                <input type="date" id="" />
             </div>
             <div>
-                <i class="fa-regular fa-calendar-days"></i> Specific Date
+                <button>Calculate</button>
+                <h3>Your Current Age</h3>
+                <h1>00 Years, 5 Months, 10 Days</h1>
+                <h5>Born on a <span id="dayOfWeek"></span></h5>
             </div>
             <div>
-                <i class="fa-solid fa-gift"></i> Find DOB
+                <div>
+                    <span>0000</span>
+                    <span>Total Days</span>
+                </div>
+                <div>
+                    <span>0000</span>
+                    <span>Total Months</span>
+                </div>
+                <div>
+                    <span>0000</span>
+                    <span>Total Weeks</span>
+                </div>
+                <div>
+                    <span>0000</span>
+                    <span>Total Hours</span>
+                </div>
             </div>
-        </nav>
-    </header>
+            <hr />
+            <div>
+                <h2>Next Birthday</h2>
+                <h3></h3>
+                <span>000 days to go</span><br />
+                <span>Turning 00</span>
+            </div>
+        </main>
 
-    <script src="script.js"></script>
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
