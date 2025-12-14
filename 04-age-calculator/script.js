@@ -10,12 +10,14 @@ let ageYear = today.getFullYear() - dob.getFullYear();
 let ageMonth = today.getMonth() - dob.getMonth();
 let ageDay = today.getDate() - dob.getDate();
 let dayOfWeek = daysOfWeek[dob.getDay()];
+
 let daysLived = Math.floor(diff / (1000 * 60 * 60 * 24));
 let weeksLived = Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
 let monthsLived = ageYear * 12 + ageMonth;
 let hoursLived = Math.floor(diff / (1000 * 60 * 60));
 let minutesLived = Math.floor(diff / (1000 * 60));
 let secondsLived = Math.floor(diff / 1000);
+let millisecondsLived = Math.floor(diff);
 
 console.log(ageYear);
 console.log(ageMonth);
@@ -27,3 +29,4 @@ console.log(monthsLived);
 console.log(hoursLived);
 console.log(minutesLived);
 console.log(secondsLived);
+console.log(millisecondsLived);
